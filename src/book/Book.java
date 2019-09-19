@@ -36,4 +36,15 @@ public class Book {
     }
 
 
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("-----------------------------" + "\n");
+        result.append("Book Name:\t" + getBookName() + "\n" + "Author Name:\t" + getAuthorName() + "\n" + "ISBN:\t" + getIsbn() + "\n");
+        result.append("-----------------------------");
+        return result.toString();
+
+    }
+
+
 }
